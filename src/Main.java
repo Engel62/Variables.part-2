@@ -63,6 +63,29 @@ public class Main {
         // Задача 5
         System.out.println("Задача 5");
 
+        int cansNuber = 120;
+        int whiteColourCans = 2;
+        int brownColourCans = 4;
+        int schoolRooms = cansNuber / (whiteColourCans + brownColourCans);
+        int allWhiteCans = schoolRooms * whiteColourCans;
+        int allBrownCans = schoolRooms * brownColourCans;
+        System.out.println("В школе, где " + schoolRooms + " классов нужно " + allWhiteCans +" банок белой краски и " + allBrownCans + " банок коричневой краски");
+
+        // Задача 6
+        System.out.println("Задача 6");
+        int banan = 80;
+        int bananas = 5;
+        int mmMilk = 105;
+        int milk = 2;
+        int iceCrimeGram = 100;
+        int iceCrime = 2;
+        int oneEgg = 70;
+        int egg = 4;
+        float food = (banan * bananas + mmMilk * milk + iceCrime * iceCrimeGram + egg * oneEgg) / 1000f;
+        System.out.println("Вес завтрака " + food + " кг");
+
+
+
 
 
 
