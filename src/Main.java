@@ -19,18 +19,18 @@ public class Main {
         System.out.println("Задача 2");
        float cat = 27.12f;
         System.out.println(cat);
-        long house = 987_678_965_549l;
+        long house = 987_678_965_549L;
         System.out.println(house);
         double frog = 2.786;
         System.out.println(frog);
-        boolean age = 6 > 10;
+        boolean age = false;
         System.out.println(age);
         short ice = 569;
         System.out.println(ice);
         var friend = -159;
         System.out.println(friend);
-        int limon = 27897;
-        System.out.println(limon);
+        int lemon = 27897;
+        System.out.println(lemon);
         byte moon = 67;
         System.out.println(moon);
         // Задача 3
@@ -39,8 +39,8 @@ public class Main {
         short AN = 27; // Ученики Анны Сергеевны
         short EA = 30; // Ученики Екатерины Андреевны
         short sheets = 480; // Закупленно листов бумаги на 3 класса
-        int allstuden = LP + AN + EA;
-        int sheetsForStudents = sheets / allstuden;
+        int allStudent = LP + AN + EA;
+        int sheetsForStudents = sheets / allStudent;
         System.out.println("На каждого ученика рассчитано " + sheetsForStudents +" листов бумаги");
         // Задача 4
         System.out.println("Задача 4");
@@ -63,17 +63,17 @@ public class Main {
         // Задача 5
         System.out.println("Задача 5");
 
-        int cansNuber = 120;
         int whiteColourCans = 2;
         int brownColourCans = 4;
-        int schoolRooms = cansNuber / (whiteColourCans + brownColourCans);
+        int cansNumber = 120;
+        int schoolRooms = cansNumber / (whiteColourCans + brownColourCans);
         int allWhiteCans = schoolRooms * whiteColourCans;
         int allBrownCans = schoolRooms * brownColourCans;
         System.out.println("В школе, где " + schoolRooms + " классов нужно " + allWhiteCans +" банок белой краски и " + allBrownCans + " банок коричневой краски");
 
         // Задача 6
         System.out.println("Задача 6");
-        int banan = 80;
+        int banana = 80;
         int bananas = 5;
         int mmMilk = 105;
         int milk = 2;
@@ -81,8 +81,45 @@ public class Main {
         int iceCrime = 2;
         int oneEgg = 70;
         int egg = 4;
-        float food = (banan * bananas + mmMilk * milk + iceCrime * iceCrimeGram + egg * oneEgg) / 1000f;
+        float food = (banana * bananas + mmMilk * milk + iceCrime * iceCrimeGram + egg * oneEgg) / 1000f;
         System.out.println("Вес завтрака " + food + " кг");
+
+        // Задача 7
+        System.out.println("Задача 7");
+        int lostWeight = 7;
+        int lostDayMin = 250;
+        int lostDayMax = 500;
+        int lostWeightGram = lostWeight * 1000;
+        int daysLostMin = lostWeightGram / lostDayMin;
+        System.out.println("Если спортсмен будет " + lostDayMin + " грамм в день, ему потребуется " + daysLostMin + " дней.");
+        int daysLostMax = lostWeightGram / lostDayMax;
+        System.out.println("Если спортсмен будет " + lostDayMax + " грамм в день, ему потребуется " + daysLostMax + " дней.");
+        int middleDay = (daysLostMin + daysLostMax) / 2;
+        System.out.println("В среднем потребуется " + middleDay + " дней");
+
+        // Задача 8
+        System.out.println("Задача 8");
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int kristinaSalary = 76230;
+        int newMashaSalary = mashaSalary + (mashaSalary * 10) / 100;
+        int newDenisSalary = denisSalary + (denisSalary * 10) / 100;
+        int newKristinaSalary = kristinaSalary + (kristinaSalary * 10) / 100;
+        int oldYearSalaryMascha = mashaSalary * 12;
+        int oldYearSalaryDenis = denisSalary * 12;
+        int oldYearSalaryKristina = kristinaSalary * 12;
+        int newYearSalaryMasha = newMashaSalary * 12;
+        int newYearSalaryDenis = newDenisSalary * 12;
+        int newYearSalaryKristina = newKristinaSalary * 12;
+        int differentYearSalaryMascha = newYearSalaryMasha - oldYearSalaryMascha;
+        int differentYearSalaryDenis = newYearSalaryDenis - oldYearSalaryDenis;
+        int differentYearSalaryKristina = newYearSalaryKristina -oldYearSalaryKristina;
+        System.out.println("Маша теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на " + differentYearSalaryMascha + " рублей.");
+        System.out.println("Денис теперь получает " + newDenisSalary + " рублей. Годовой доход вырос на " + differentYearSalaryDenis + " рублей.");
+        System.out.println("Кристина теперь получает " + newKristinaSalary + " рублей. Годовой доход вырос на " + differentYearSalaryKristina + " рублей.");
+
+
+
 
 
 
